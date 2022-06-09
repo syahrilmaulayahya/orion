@@ -26,7 +26,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Star Classification-</a>
+                <a class="navbar-brand" href="#page-top">Star Classification</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -35,7 +35,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Classification">Classification</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Variable</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,7 +45,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="https://bit.ly/3NZN0qJ" alt="..." />
+                <img class="masthead-avatar mb-5" src="https://drive.google.com/uc?export=download&id=1zVjokOU7fNmXIZdA6stf7YAm3wFlBGpK" alt="..." />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">-Star Classification-</h1>
                 <!-- Icon Divider-->
@@ -55,7 +55,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Galaxy - Star - Quasar</p>
+                <p class="masthead-subheading font-weight-light mb-0">Classifying Stellar into Star, Galaxy and Quasar</p>
             </div>
         </header>
 
@@ -63,7 +63,7 @@
             <!-- About Section-->
             <section class="page-section Predict" id="Classification">
                 <div class='pt-0 pb-5'>
-                    <div class="max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl bg-white max-h-screen shadow-2xl flex-row rounded-lg relative">
+                    <div class="max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl bg-white max-h-screen shadow-2xl flex-row rounded-lg relative" style="overflow: auto;">
                         <form action="{{ url_for('predict') }}" method="POST" class="flex flex-col"><p class="text-center text-black mt-5 mx-5">Sebuah Aplikasi Machine Learning Berbasis Web Untuk Prediksi Benda Langit Di Luar Angkasa, Dibangun Menggunakan Flask dan Metode Supervised Learning Algoritma, Dipublikasi Dengan Heroku.</p><br>
                             <div class="form-orion grid grid-flow-row-dense grid-cols-3 grid-rows-3">
                                 <input class="p-4 mx-5 bg-gray-100 rounded-md" type="text" name="alpha" placeholder="Alpha eg. 135.68"><br>
@@ -116,6 +116,7 @@
                             <h1 class="text-red-500 text-center mt-5 text-3xl font-bold">Prediksi Benda Langit = 
                                 {{prediction}}
                             </h1>
+                            
                         </div>    
                         
                         <div class="stars"></div>
@@ -143,23 +144,19 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Bintang merupakan benda langit yang dapat memancarkan cahayanya sendiri.</p></div>
                     <div class="col-lg-4 ms-auto"><p class="lead">Galaxy merupakan kumpulan gas besar, debu, dan milliaran bintang. Sebuah galaxy disatukan oleh gravitasi.</p></div>
                     <div class="col-lg-4 me-auto"><p class="lead">Quasar atau biasa dikenal dengan QSO (Quasar-Stellar Object) merupakan inti galaksi aktif yang memiliki energi yang kuat dan besar. Akan tetapi, karena jaraknya yang sangat jauh dari bumi, quasar akan terlihat seperti bintang jika dilihat melalui teleskop</p></div>
                 </div>
                 <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
-                </div>
+                
             </div>
         </section>
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Variable</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -176,52 +173,17 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
+                        <div style="margin:auto;">
+                            <ul>
+                                <li><div style="width:20% ; display:inline-block">U (ultraviolet)</div>=<div style="width:5% ; display:inline-block"></div>intensitas cahaya dengan flux 3543 Amstrong</li>
+                                <li><div style="width:20% ; display:inline-block">G (green)</div>=<div style="width:5% ; display:inline-block"></div>intensitas cahaya dengan flux 4770 Amstrong</li>
+                                <li><div style="width:20% ; display:inline-block">R (red)</div>=<div style="width:5% ; display:inline-block"></div>intensitas cahaya dengan flux 6231 Amstrong</li>
+                                <li><div style="width:20% ; display:inline-block">I (near - infrared)</div>=<div style="width:5% ; display:inline-block"></div>intensitas cahaya dengan flux 7625 Amstrong</li>
+                                <li><div style="width:20% ; display:inline-block">Z (infrared)</div>=<div style="width:5% ; display:inline-block"></div>intensitas cahaya dengan flux 9134 Amstrong</li>
+                                <li><div style="width:20% ; display:inline-block">Redshift</div>=<div style="width:5% ; display:inline-block"></div>pengukuran objek berdasarkan pergerakan relative objek terhadap bumi</li>
+                                <li><div style="width:20% ; display:inline-block"> </div> <div style="width:5% ; display:inline-block"></div> (dilihat dari peningkatan Panjang gelombang)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,38 +192,20 @@
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
-                    </div>
+                   
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    <div class="col-lg-4 mb-5 mb-lg-0" style="margin:auto ;">
+                        <h4 class="text-uppercase mb-4">About Developer</h4>
+                        <p>Developed by Orion Team in Galaxy Class Orbit Future Academy Gen Z</p>
                     </div>
                     <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
+                   
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+            <div class="container"><small>Orion Team 2022</small></div>
         
 
         <!-- Bootstrap core JS-->
